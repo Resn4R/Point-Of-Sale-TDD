@@ -16,4 +16,10 @@ final class Point_Of_Sale_TDDTests: XCTestCase {
         
         XCTAssertEqual(sample.scan(barcode: "12345"), "$7.25")
     }
+    //2. Barcode ‘23456’ should display price ‘$12.50’
+    func testForBarcode23456() {
+        let sample = CodeScanner()
+        
+        XCTAssertEqual(sample.scan(barcode: "23456"), "$12.50")
+    }
 }
