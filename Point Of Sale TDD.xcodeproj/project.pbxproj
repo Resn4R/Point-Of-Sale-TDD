@@ -14,6 +14,7 @@
 		4F85D53E2AEC077F00D29259 /* Point_Of_Sale_TDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F85D53D2AEC077F00D29259 /* Point_Of_Sale_TDDTests.swift */; };
 		4F85D5482AEC077F00D29259 /* Point_Of_Sale_TDDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F85D5472AEC077F00D29259 /* Point_Of_Sale_TDDUITests.swift */; };
 		4F85D54A2AEC077F00D29259 /* Point_Of_Sale_TDDUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F85D5492AEC077F00D29259 /* Point_Of_Sale_TDDUITestsLaunchTests.swift */; };
+		4F85D5572AEC07EA00D29259 /* Code Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F85D5562AEC07EA00D29259 /* Code Scanner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		4F85D5432AEC077F00D29259 /* Point Of Sale TDDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Point Of Sale TDDUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F85D5472AEC077F00D29259 /* Point_Of_Sale_TDDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point_Of_Sale_TDDUITests.swift; sourceTree = "<group>"; };
 		4F85D5492AEC077F00D29259 /* Point_Of_Sale_TDDUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point_Of_Sale_TDDUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4F85D5562AEC07EA00D29259 /* Code Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Code Scanner.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				4F85D52C2AEC077D00D29259 /* Point_Of_Sale_TDDApp.swift */,
 				4F85D52E2AEC077D00D29259 /* ContentView.swift */,
+				4F85D5562AEC07EA00D29259 /* Code Scanner.swift */,
 				4F85D5302AEC077F00D29259 /* Assets.xcassets */,
 				4F85D5322AEC077F00D29259 /* Preview Content */,
 			);
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F85D5572AEC07EA00D29259 /* Code Scanner.swift in Sources */,
 				4F85D52F2AEC077D00D29259 /* ContentView.swift in Sources */,
 				4F85D52D2AEC077D00D29259 /* Point_Of_Sale_TDDApp.swift in Sources */,
 			);
