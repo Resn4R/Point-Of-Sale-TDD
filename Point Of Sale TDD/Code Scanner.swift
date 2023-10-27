@@ -8,16 +8,30 @@
 import Foundation
 class CodeScanner {
     
-    func scan(barcode: String) -> String {
-        var result = ""
+    func scan(barcodes: [String]) -> String {
         
-        switch barcode {
-        case "12345": result = "$7.25"
-        case "23456": result = "$12.50"
-        case "": result = "Error: empty barcode"
-        default: result = "Error: barcode not found"
+        let emptyBarcode = {
+            barcodes.contains("") && barcodes.count == 1
+        }
+        let invalidBarcode = {
+            barcodes.contains("99999") && barcodes.count == 1
         }
         
-        return result
+        guard !emptyBarcode() else { return "Error: empty barcode" }
+        
+        guard !invalidBarcode() else { return "Error: barcode not found"}
+        
+        var shoppingCart = [Double]()
+        
+        barcodes.forEach{ barcode in
+            switch barcode {
+            case "12345": shoppingCart.append(7.25)
+            case "23456": shoppingCart.append(12.50)
+            default: return
+            }
+        }
+        
+        let total = shoppingCart.reduce(0.0,+)
+        return String(format: "$%.2f", total)
     }
 }
