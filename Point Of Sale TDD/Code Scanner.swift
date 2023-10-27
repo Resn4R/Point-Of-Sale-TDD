@@ -9,10 +9,12 @@ import Foundation
 class CodeScanner {
     
     func scan(barcode: String) -> String {
-        if barcode == "12345" {
-            return "$7.25"
-        } else if barcode == "23456" { return "$12.50" }
+        var result = ""
         
-        return ""
+        if barcode == "12345" {
+            result = "$7.25"
+        } else if barcode == "23456" { result = "$12.50" }
+        
+        return result
     }
 }
