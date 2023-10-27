@@ -18,7 +18,6 @@ class CodeScanner {
         }
         
         guard !emptyBarcode() else { return "Error: empty barcode" }
-        
         guard !invalidBarcode() else { return "Error: barcode not found"}
         
         var shoppingCart = [Double]()
