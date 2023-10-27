@@ -14,7 +14,8 @@ class CodeScanner {
         if barcode == "12345" {
             result = "$7.25"
         } else if barcode == "23456" { result = "$12.50" }
-        else {result = "Error: barcode not found"}
+        else if barcode == "99999"{result = "Error: barcode not found"}
+        else if barcode == ""   {result = "Error: empty barcode"}
         
         return result
     }

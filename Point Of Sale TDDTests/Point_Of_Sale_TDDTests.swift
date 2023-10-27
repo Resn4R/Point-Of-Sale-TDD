@@ -28,4 +28,10 @@ final class Point_Of_Sale_TDDTests: XCTestCase {
         let sample = CodeScanner()
         XCTAssertEqual(sample.scan(barcode: "99999"), "Error: barcode not found")
     }
+    
+    //4. Empty barcode should display ‘Error: empty barcode’
+    func testForEmptyBarcodeReturnsError() {
+        let sample = CodeScanner()
+        XCTAssertEqual(sample.scan(barcode: ""), "Error: empty barcode")
+    }
 }
